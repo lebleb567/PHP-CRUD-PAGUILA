@@ -199,7 +199,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <select name="branch">
                 <option value="">Select Branch</option>
                 <?php
-                    foreach (['BSIT','BSCS','BSCE','BSECE'] as $b) {
+                    foreach (['BSIT','BSND','BSRT','BSMT', 'BSAE'] as $b) {
                         $selected = ($values['branch'] === $b) ? "selected" : "";
                         echo "<option $selected>$b</option>";
                     }
